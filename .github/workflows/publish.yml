@@ -10,6 +10,10 @@ on:
     types:
       - published      # DOES trigger even when release author is github-actions
 
+permissions:
+  contents: write
+  pull-requests: read
+
 jobs:
   publish-artifacts:
     name: Publish
